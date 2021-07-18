@@ -1,0 +1,11 @@
+// Mixins, functions & variables
+@forward "mixins";
+
+// Basic global styles
+// Mixins/variables may be placed inside these files only if they won't be accessed outside that file
+@forward "base";
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

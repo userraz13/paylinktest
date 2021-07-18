@@ -1,0 +1,18 @@
+﻿<div class="mb-xl">
+    <div *ngFor="let example of examples; let last = last" [class.mb-sm]="!last">{{ example }}</div>
+</div>
+
+<form class="cta-container mb-md">
+    <mat-form-field class="mr-md" appearance="fill">
+        <mat-label>Number</mat-label>
+        <input matInput name="input-number" [value]="inputNum" [(ngModel)]="inputNum">
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="onFibNumCalculateClick()">Calculate Fibonacci number</button>
+</form>
+
+<div *ngIf="!errorMsg; else errorMsgTemplate">{{ fibNum }}</div>
+
+<ng-template #errorMsgTemplate>
+    <div class="error-text">{{ errorMsg }}</div>
+</ng-template>

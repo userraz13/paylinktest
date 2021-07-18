@@ -1,0 +1,501 @@
+﻿@use "mixin/spacing";
+
+/*
+ * Utility classes for adding padding or margin
+ *
+ * TODO: These could be extended for responsiveness when needed
+ */
+
+// MARGIN
+.m {
+    // ALL SIDES  eg .m-xs
+    &-auto {
+        margin: auto;
+    }
+
+    &-0 {
+        margin: 0;
+    }
+
+    &-xs {
+        margin: spacing.$sp-xs;
+    }
+
+    &-sm {
+        margin: spacing.$sp-sm;
+    }
+
+    &-md {
+        margin: spacing.$sp-md;
+    }
+
+    &-lg {
+        margin: spacing.$sp-lg;
+    }
+
+    &-xl {
+        margin: spacing.$sp-xl;
+    }
+
+    &-xxl {
+        margin: spacing.$sp-xxl;
+    }
+
+    &-xxxl {
+        margin: spacing.$sp-xxxl;
+    }
+
+    // VERTICAL ONLY  eg .my-xs
+    &y- {
+        &0 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &auto {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        &xs {
+            margin-top: spacing.$sp-xs;
+            margin-bottom: spacing.$sp-xs;
+        }
+
+        &sm {
+            margin-top: spacing.$sp-sm;
+            margin-bottom: spacing.$sp-sm;
+        }
+
+        &md {
+            margin-top: spacing.$sp-md;
+            margin-bottom: spacing.$sp-md;
+        }
+
+        &lg {
+            margin-top: spacing.$sp-lg;
+            margin-bottom: spacing.$sp-lg;
+        }
+
+        &xl {
+            margin-top: spacing.$sp-xl;
+            margin-bottom: spacing.$sp-xl;
+        }
+
+        &xxl {
+            margin-top: spacing.$sp-xxl;
+            margin-bottom: spacing.$sp-xxl;
+        }
+
+        &xxxl {
+            margin-top: spacing.$sp-xxxl;
+            margin-bottom: spacing.$sp-xxxl;
+        }
+    }
+
+    // HORIZONTAL ONLY  eg .mx-xs
+    &x- {
+        &0 {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &auto {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &xs {
+            margin-right: spacing.$sp-xs;
+            margin-left: spacing.$sp-xs;
+        }
+
+        &sm {
+            margin-right: spacing.$sp-sm;
+            margin-left: spacing.$sp-sm;
+        }
+
+        &md {
+            margin-right: spacing.$sp-md;
+            margin-left: spacing.$sp-md;
+        }
+
+        &lg {
+            margin-right: spacing.$sp-lg;
+            margin-left: spacing.$sp-lg;
+        }
+
+        &xl {
+            margin-right: spacing.$sp-xl;
+            margin-left: spacing.$sp-xl;
+        }
+
+        &xxl {
+            margin-right: spacing.$sp-xxl;
+            margin-left: spacing.$sp-xxl;
+        }
+
+        &xxxl {
+            margin-right: spacing.$sp-xxxl;
+            margin-left: spacing.$sp-xxxl;
+        }
+    }
+
+    // TOP ONLY  eg .mt-xs
+    &t- {
+        &0 {
+            margin-top: 0;
+        }
+
+        &auto {
+            margin-top: auto;
+        }
+
+        &xs {
+            margin-top: spacing.$sp-xs;
+        }
+
+        &sm {
+            margin-top: spacing.$sp-sm;
+        }
+
+        &md {
+            margin-top: spacing.$sp-md;
+        }
+
+        &lg {
+            margin-top: spacing.$sp-lg;
+        }
+
+        &xl {
+            margin-top: spacing.$sp-xl;
+        }
+
+        &xxl {
+            margin-top: spacing.$sp-xxl;
+        }
+
+        &xxxl {
+            margin-top: spacing.$sp-xxxl;
+        }
+    }
+
+    // BOTTOM ONLY  eg .mb-xs
+    &b- {
+        &0 {
+            margin-bottom: 0;
+        }
+
+        &auto {
+            margin-bottom: auto;
+        }
+
+        &xs {
+            margin-bottom: spacing.$sp-xs;
+        }
+
+        &sm {
+            margin-bottom: spacing.$sp-sm;
+        }
+
+        &md {
+            margin-bottom: spacing.$sp-md;
+        }
+
+        &lg {
+            margin-bottom: spacing.$sp-lg;
+        }
+
+        &xl {
+            margin-bottom: spacing.$sp-xl;
+        }
+
+        &xxl {
+            margin-bottom: spacing.$sp-xxl;
+        }
+
+        &xxxl {
+            margin-bottom: spacing.$sp-xxxl;
+        }
+    }
+
+    // RIGHT ONLY  eg .mr-xs
+    &r- {
+        &0 {
+            margin-right: 0;
+        }
+
+        &auto {
+            margin-right: auto;
+        }
+
+        &xs {
+            margin-right: spacing.$sp-xs;
+        }
+
+        &sm {
+            margin-right: spacing.$sp-sm;
+        }
+
+        &md {
+            margin-right: spacing.$sp-md;
+        }
+
+        &lg {
+            margin-right: spacing.$sp-lg;
+        }
+
+        &xl {
+            margin-right: spacing.$sp-xl;
+        }
+
+        &xxl {
+            margin-right: spacing.$sp-xxl;
+        }
+
+        &xxxl {
+            margin-right: spacing.$sp-xxxl;
+        }
+    }
+
+    // LEFT ONLY  eg .ml-xs
+    &l- {
+        &0 {
+            margin-left: 0;
+        }
+
+        &auto {
+            margin-left: auto;
+        }
+
+        &xs {
+            margin-left: spacing.$sp-xs;
+        }
+
+        &sm {
+            margin-left: spacing.$sp-sm;
+        }
+
+        &md {
+            margin-left: spacing.$sp-md;
+        }
+
+        &lg {
+            margin-left: spacing.$sp-lg;
+        }
+
+        &xl {
+            margin-left: spacing.$sp-xl;
+        }
+
+        &xxl {
+            margin-left: spacing.$sp-xxl;
+        }
+
+        &xxxl {
+            margin-left: spacing.$sp-xxxl;
+        }
+    }
+}
+
+// PADDING
+.p {
+    &-0 {
+        padding: 0;
+    }
+
+    // ALL SIDES  eg .p-xs
+    &-xs {
+        padding: spacing.$sp-xs;
+    }
+
+    &-sm {
+        padding: spacing.$sp-sm;
+    }
+
+    &-md {
+        padding: spacing.$sp-md;
+    }
+
+    &-lg {
+        padding: spacing.$sp-lg;
+    }
+
+    &-xl {
+        padding: spacing.$sp-xl;
+    }
+
+    // VERTICAL ONLY  eg .py-xs
+    &y- {
+        &0 {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &xs {
+            padding-top: spacing.$sp-xs;
+            padding-bottom: spacing.$sp-xs;
+        }
+
+        &sm {
+            padding-top: spacing.$sp-sm;
+            padding-bottom: spacing.$sp-sm;
+        }
+
+        &md {
+            padding-top: spacing.$sp-md;
+            padding-bottom: spacing.$sp-md;
+        }
+
+        &lg {
+            padding-top: spacing.$sp-lg;
+            padding-bottom: spacing.$sp-lg;
+        }
+
+        &xl {
+            padding-top: spacing.$sp-xl;
+            padding-bottom: spacing.$sp-xl;
+        }
+    }
+
+    // HORIZONTAL ONLY  eg .px-xs
+    &x- {
+        &0 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        &xs {
+            padding-right: spacing.$sp-xs;
+            padding-left: spacing.$sp-xs;
+        }
+
+        &sm {
+            padding-right: spacing.$sp-sm;
+            padding-left: spacing.$sp-sm;
+        }
+
+        &md {
+            padding-right: spacing.$sp-md;
+            padding-left: spacing.$sp-md;
+        }
+
+        &lg {
+            padding-right: spacing.$sp-lg;
+            padding-left: spacing.$sp-lg;
+        }
+
+        &xl {
+            padding-right: spacing.$sp-xl;
+            padding-left: spacing.$sp-xl;
+        }
+    }
+
+    // TOP ONLY  eg .pt-xs
+    &t- {
+        &0 {
+            padding-top: 0;
+        }
+
+        &xs {
+            padding-top: spacing.$sp-xs;
+        }
+
+        &sm {
+            padding-top: spacing.$sp-sm;
+        }
+
+        &md {
+            padding-top: spacing.$sp-md;
+        }
+
+        &lg {
+            padding-top: spacing.$sp-lg;
+        }
+
+        &xl {
+            padding-top: spacing.$sp-xl;
+        }
+    }
+
+    // BOTTOM ONLY  eg .pb-xs
+    &b- {
+        &0 {
+            padding-bottom: 0;
+        }
+
+        &xs {
+            padding-bottom: spacing.$sp-xs;
+        }
+
+        &sm {
+            padding-bottom: spacing.$sp-sm;
+        }
+
+        &md {
+            padding-bottom: spacing.$sp-md;
+        }
+
+        &lg {
+            padding-bottom: spacing.$sp-lg;
+        }
+
+        &xl {
+            padding-bottom: spacing.$sp-xl;
+        }
+    }
+
+    // RIGHT ONLY  eg .pr-xs
+    &r- {
+        &0 {
+            padding-right: 0;
+        }
+
+        &xs {
+            padding-right: spacing.$sp-xs;
+        }
+
+        &sm {
+            padding-right: spacing.$sp-sm;
+        }
+
+        &md {
+            padding-right: spacing.$sp-md;
+        }
+
+        &lg {
+            padding-right: spacing.$sp-lg;
+        }
+
+        &xl {
+            padding-right: spacing.$sp-xl;
+        }
+    }
+
+    // LEFT ONLY  eg .pl-xs
+    &l- {
+        &0 {
+            padding-left: 0;
+        }
+
+        &xs {
+            padding-left: spacing.$sp-xs;
+        }
+
+        &sm {
+            padding-left: spacing.$sp-sm;
+        }
+
+        &md {
+            padding-left: spacing.$sp-md;
+        }
+
+        &lg {
+            padding-left: spacing.$sp-lg;
+        }
+
+        &xl {
+            padding-left: spacing.$sp-xl;
+        }
+    }
+}

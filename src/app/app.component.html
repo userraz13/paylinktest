@@ -1,1 +1,9 @@
-app running!
+<div class="top-nav">
+    <button mat-flat-button color="primary" [routerLink]="['/fizz-buzz']">FizzBuzz</button>
+    <button mat-flat-button color="accent" [routerLink]="['/fibonacci']">Fibonacci</button>
+    <button mat-flat-button color="warn" [routerLink]="['/magic-getter-setter']">MagicGetterSetter</button>
+</div>
+
+<div class="root-container">
+    <router-outlet></router-outlet>
+</div>

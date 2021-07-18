@@ -1,0 +1,9 @@
+﻿@use "mixin/positioning";
+
+.cta-container {
+    @include positioning.flex-row(center);
+}
+
+.error-text {
+    color: red;
+}

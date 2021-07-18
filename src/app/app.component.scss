@@ -1,0 +1,15 @@
+@use "mixin/positioning";
+@use "mixin/spacing";
+
+.top-nav {
+    @include positioning.flex-row(center, center);
+    padding: spacing.$sp-xl;
+
+    > :not(:last-child) {
+        margin-right: spacing.$sp-xl;
+    }
+}
+
+.root-container {
+    margin: spacing.$sp-xl;
+}
